@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/socra_000/OneDrive/Documents/GitHub/OperatingSystems/Task1/check_file_permissions.c
+stdio.h
+-
+unistd.h
+-
+errno.h
+-
+

@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -Wl,--enable-auto-import CMakeFiles/check_file_permissions.c.dir/check_file_permissions.c.o  -o check_file_permissions.c.exe -Wl,--out-implib,libcheck_file_permissions.c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
