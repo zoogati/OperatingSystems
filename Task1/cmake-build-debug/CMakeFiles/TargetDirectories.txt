@@ -1,3 +1,0 @@
-/cygdrive/c/Users/socra_000/OneDrive/Documents/GitHub/OperatingSystems/Task1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/cygdrive/c/Users/socra_000/OneDrive/Documents/GitHub/OperatingSystems/Task1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/cygdrive/c/Users/socra_000/OneDrive/Documents/GitHub/OperatingSystems/Task1/cmake-build-debug/CMakeFiles/check_file_permissions.c.dir
