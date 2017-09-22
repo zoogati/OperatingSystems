@@ -1,0 +1,24 @@
+There are four re-occurring print statements.
+
+1. 35, b: 25, Process Id: **** Q fork success
+2. 35, b: 45, Process Id: **** R error on fork
+3. 905, b: 25, Process Id: **** R fork success
+4. 10, b: 30, Process Id: **** Q fork error
+
+
+After multiple runs, we can see that print statement 1 and 2 always have the same pid.
+This means that an error on process R is techinally part of process Q.
+
+Print statements 3 and 4 always have different pid. When R is successfully forked, it
+creates a different process. When Q has an error, it is also a different process.
+
+There are 4 possible combinations of output (1,4,3,2), (1,4,2,3), (4,1,2,3), and (4,1,3,2).
+The combination of outputs happen in random order, which could be explained by interleaving.
+
+Another note is that the inner loop statments, which are part of process R, are always
+printed after a process Q fork and error.
+
+I would consider the fourth print statement to be the result of process P. The third
+statement, as mentioned before, is process R.
+
+ 
