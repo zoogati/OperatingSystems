@@ -16,7 +16,7 @@ int main (int argc, char* argv[])
 	//Check if file exists
 	returnval = access(filepath, F_OK);
 	if (returnval == 0) {
-		printf("\n %s exists\n", filepath);
+		printf("\n%s exists\n", filepath);
 	}
 	else {
 		if (errno == ENOENT) {
@@ -34,18 +34,21 @@ int main (int argc, char* argv[])
 		printf("%s has read access\n", filepath);
 	}
 	else if (returnval == -1) {
-		printf("%s doesn't have read access, error %d", filepath, errno);
+		/*  Not really required, but shows error number.
+		    printf("%s doesn't have read access, error %d\n", filepath, errno);
+		*/
 		perror("access");
 	}
 	
 	//TODO: Check write access
-	
 	returnval = access(filepath, W_OK);
 	if (returnval == 0) {
 		printf("%s has write access\n", filepath);
 	}
 	else if (returnval == -1) {
-		printf("%s doesn't have write access, error %d", filepath, errno);
+		/*  Not really required, but shows error number.
+		    printf("%s doesn't have write access, error %d\n", filepath, errno);
+		*/
 		perror("access");
 	}
 	
